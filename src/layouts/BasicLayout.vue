@@ -3,7 +3,7 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
 </script>
 <template>
   <div id="basicLayout">
-    <a-layout style="height: 400px">
+    <a-layout style="min-height: 100vh">
       <a-layout-header class="header">
         <GlobalHeader />
       </a-layout-header>
@@ -17,11 +17,11 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
 #basicLayout {
 }
 #basicLayout .header {
-  margin-bottom: 16px;
 }
 #basicLayout .content {
   background: linear-gradient(to right, #eee, #fff);
   margin-bottom: 16px;
+  padding: 20px;
 }
 #basicLayout .footer {
   background: #efefef;
@@ -30,6 +30,6 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
   left: 0;
   right: 0;
   text-align: center;
-  position: absolute;
+  position: sticky;
 }
 </style>

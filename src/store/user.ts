@@ -1,5 +1,6 @@
 // initial state
 import { StoreOptions } from "vuex";
+import AccessEnum from "@/access/accessEnum";
 
 // getters
 const getters = {};
@@ -9,7 +10,7 @@ export default {
   state: () => ({
     loginUser: {
       userName: "未登录",
-      userRole: "notAdmin",
+      userRole: AccessEnum.NOT_LOGIN,
     },
   }),
   actions: {
